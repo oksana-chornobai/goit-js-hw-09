@@ -12,12 +12,29 @@
 
     <main>
       <!-- Loads the specified .html file -->
+      <div class="container">
+        <nav class="nav">
+          <ul class="nav-list">
+            <li class="nav-item">
+              <a class="nav-link {=$highlight-act}" href="./1-gallery.html"
+                >Gallery</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link {=$highlight-curr}" href="./2-form.html"
+                >Form</a
+              >
+            </li>
+          </ul>
+        </nav>
+      </div>
       <load src="./partials/vite-promo.html" />
       <load src="./partials/badges.html" />
     </main>
-
+    <!-- <ul>
+      <li><a href="./1-gallery.html">Gallery</a></li>
+      <li><a href="./2-form.html">Form</a></li>
+    </ul> -->
     <load src="./partials/footer.html" />
-
-    <script type="module" src="./main.js"></script>
   </body>
 </html>
